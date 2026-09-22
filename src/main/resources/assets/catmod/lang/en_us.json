@@ -1,13 +1,3 @@
 {
-  "itemGroup.catmod": "Example Mod Tab",
-  "block.catmod.example_block": "Example Block",
-  "item.catmod.example_item": "Example Item",
-
-  "catmod.configuration.title": "Cat Mod Configs",
-  "catmod.configuration.section.catmod.common.toml": "Cat Mod Configs",
-  "catmod.configuration.section.catmod.common.toml.title": "Cat Mod Configs",
-  "catmod.configuration.items": "Item List",
-  "catmod.configuration.logDirtBlock": "Log Dirt Block",
-  "catmod.configuration.magicNumberIntroduction": "Magic Number Text",
-  "catmod.configuration.magicNumber": "Magic Number"
+  "item.catmod.cat_mint": "Cat Mint"
 }
