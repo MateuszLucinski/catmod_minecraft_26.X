@@ -1,3 +1,11 @@
 {
-  "item.catmod.cat_mint": "Cat Mint"
+  "item.catmod.cat_mint": "Cat Mint",
+  "item.catmod.catanium_slab" : "Catanium Slab",
+
+  "block.catmod.catanium_block" : "Catanium Block",
+  "block.catmod.catanium_ore" : "Catanium Ore",
+
+  "creativetab.catmod.catanium_items": "Catanium Items"
+
+
 }

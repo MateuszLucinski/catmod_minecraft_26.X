@@ -1,5 +1,7 @@
 package com.mateusz.catmod;
 
+import com.mateusz.catmod.block.ModBlocks;
+import com.mateusz.catmod.creativemodtab.ModCreativeModeTabs;
 import com.mateusz.catmod.item.ModItems;
 import org.slf4j.Logger;
 
@@ -30,7 +32,10 @@ public class CatMod {
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
+        ModCreativeModeTabs.register(modEventBus);
+
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register ourselves for server and other game events we are interested in.
         // Note that this is necessary if and only if we want *this* class (CatMod) to respond directly to events.
@@ -50,8 +55,13 @@ public class CatMod {
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-        if (event.getTabKey() == CreativeModeTabs.INGREDIENTS){
+        if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS){
             event.accept(ModItems.CAT_MINT);
+        }
+        if (event.getTabKey() == ModCreativeModeTabs.CATANIUM_ITEMS_TAB) {
+            event.accept(ModItems.CATANIUM_SLAB);
+            event.accept(ModBlocks.CATANIUM_BLOCK);
+            event.accept(ModBlocks.CATANIUM_ORE);
         }
     }
 
