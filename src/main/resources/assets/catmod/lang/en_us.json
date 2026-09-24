@@ -2,6 +2,13 @@
   "item.catmod.cat_mint": "Cat Mint",
   "item.catmod.catanium_slab" : "Catanium Slab",
 
+  "item.catmod.catanium_sword" : "Catanium Sword",
+  "item.catmod.catanium_pickaxe" : "Catanium Pickaxe",
+  "item.catmod.catanium_axe" : "Catanium Axe",
+  "item.catmod.catanium_shovel" : "Catanium Shovel",
+  "item.catmod.catanium_hoe" : "Catanium Hoe",
+
+
   "block.catmod.catanium_block" : "Catanium Block",
   "block.catmod.catanium_ore" : "Catanium Ore",
 

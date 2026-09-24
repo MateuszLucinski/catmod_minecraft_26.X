@@ -20,6 +20,13 @@ public class ModModelProvider extends ModelProvider {
         itemModels.generateFlatItem(ModItems.CAT_MINT.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ModItems.CATANIUM_SLAB.get(), ModelTemplates.FLAT_ITEM);
 
+        itemModels.generateFlatItem(ModItems.CATANIUM_SWORD.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModels.generateFlatItem(ModItems.CATANIUM_PICKAXE.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModels.generateFlatItem(ModItems.CATANIUM_AXE.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModels.generateFlatItem(ModItems.CATANIUM_SHOVEL.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModels.generateFlatItem(ModItems.CATANIUM_HOE.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+
+
         /*BLOCKS*/
         blockModels.createTrivialCube(ModBlocks.CATANIUM_BLOCK.get());
         blockModels.createTrivialCube(ModBlocks.CATANIUM_ORE.get());

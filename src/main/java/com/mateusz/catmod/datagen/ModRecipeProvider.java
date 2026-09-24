@@ -7,6 +7,8 @@ import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.RecipeCategory;
 import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.data.recipes.RecipeProvider;
+import net.minecraft.world.item.Items;
+
 
 import java.util.concurrent.CompletableFuture;
 
@@ -49,5 +51,61 @@ public class ModRecipeProvider extends RecipeProvider {
                 .unlockedBy(getHasName(ModItems.CATANIUM_SLAB.get()), has(ModItems.CATANIUM_SLAB))
                 .group("catanium")
                 .save(output, "catmod:catanium_slabs_from_block");
+
+
+
+        shaped(RecipeCategory.COMBAT, ModItems.CATANIUM_SWORD.get())
+                .pattern("A")
+                .pattern("A")
+                .pattern("B")
+                .define('A', ModItems.CATANIUM_SLAB.get())
+                .define('B', Items.STICK)
+                .unlockedBy(getHasName(ModItems.CATANIUM_SLAB.get()), has(ModItems.CATANIUM_SLAB))
+                .unlockedBy(getHasName(Items.STICK), has(Items.STICK))
+                .group("catanium")
+                .save(output);
+
+
+        shaped(RecipeCategory.TOOLS, ModItems.CATANIUM_PICKAXE.get())
+                .pattern("AAA")
+                .pattern(" B ")
+                .pattern(" B ")
+                .define('A', ModItems.CATANIUM_SLAB.get())
+                .define('B', Items.STICK)
+                .unlockedBy(getHasName(ModItems.CATANIUM_SLAB.get()), has(ModItems.CATANIUM_SLAB))
+                .group("catanium")
+                .save(output);
+
+
+        shaped(RecipeCategory.TOOLS, ModItems.CATANIUM_AXE.get())
+                .pattern("AA")
+                .pattern("BA")
+                .pattern("B ")
+                .define('A', ModItems.CATANIUM_SLAB.get())
+                .define('B', Items.STICK)
+                .unlockedBy(getHasName(ModItems.CATANIUM_SLAB.get()), has(ModItems.CATANIUM_SLAB))
+                .unlockedBy(getHasName(Items.STICK), has(Items.STICK))
+                .group("catanium")
+                .save(output);
+
+        shaped(RecipeCategory.TOOLS, ModItems.CATANIUM_SHOVEL.get())
+                .pattern("A")
+                .pattern("B")
+                .pattern("B")
+                .define('A', ModItems.CATANIUM_SLAB.get())
+                .define('B', Items.STICK)
+                .unlockedBy(getHasName(ModItems.CATANIUM_SLAB.get()), has(ModItems.CATANIUM_SLAB))
+                .group("catanium")
+                .save(output);
+
+        shaped(RecipeCategory.TOOLS, ModItems.CATANIUM_HOE.get())
+                .pattern("AA")
+                .pattern("B ")
+                .pattern("B ")
+                .define('A', ModItems.CATANIUM_SLAB.get())
+                .define('B', Items.STICK)
+                .unlockedBy(getHasName(ModItems.CATANIUM_SLAB.get()), has(ModItems.CATANIUM_SLAB))
+                .group("catanium")
+                .save(output);
     }
 }

@@ -1,0 +1,8 @@
+{
+  "remove": [
+    "#catmod:needs_catanium_tool"
+  ],
+  "values": [
+    "#minecraft:incorrect_for_diamond_tool"
+  ]
+}
