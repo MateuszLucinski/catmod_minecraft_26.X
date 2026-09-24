@@ -3,6 +3,7 @@ package com.mateusz.catmod;
 import com.mateusz.catmod.datagen.ModBlockLootTableProvider;
 import com.mateusz.catmod.datagen.ModBlockTagsProvider;
 import com.mateusz.catmod.datagen.ModModelProvider;
+import com.mateusz.catmod.datagen.ModRecipeProvider;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.loot.LootTableProvider;
@@ -30,5 +31,6 @@ public class CatModDataGen {
                 Collections.emptySet(),
                 List.of(new LootTableProvider.SubProviderEntry(ModBlockLootTableProvider::new, LootContextParamSets.BLOCK)),lookupProvider)
         );
+        generator.addProvider(true, new ModRecipeProvider.Runner(packOutput,lookupProvider));
     }
 }

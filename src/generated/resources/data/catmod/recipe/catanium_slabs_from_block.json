@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "catanium",
+  "ingredients": [
+    "catmod:catanium_block"
+  ],
+  "result": {
+    "count": 9,
+    "id": "catmod:catanium_slab"
+  }
+}
