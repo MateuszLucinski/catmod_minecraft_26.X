@@ -1,6 +1,7 @@
 package com.mateusz.catmod.datagen;
 
 import com.mateusz.catmod.CatMod;
+import com.mateusz.catmod.block.ModBlocks;
 import com.mateusz.catmod.item.ModItems;
 import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.ItemModelGenerators;
@@ -17,7 +18,11 @@ public class ModModelProvider extends ModelProvider {
     @Override
     protected void registerModels(BlockModelGenerators blockModels, ItemModelGenerators itemModels){
         itemModels.generateFlatItem(ModItems.CAT_MINT.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(ModItems.CATANIUM_SLAB.get(), ModelTemplates.FLAT_ITEM);
 
+        /*BLOCKS*/
+        blockModels.createTrivialCube(ModBlocks.CATANIUM_BLOCK.get());
+        blockModels.createTrivialCube(ModBlocks.CATANIUM_ORE.get());
     }
 
 }
