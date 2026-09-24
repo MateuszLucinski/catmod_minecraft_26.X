@@ -22,10 +22,15 @@ public class ModCreativeModeTabs {
                      .title(Component.translatable("creativetab.catmod.catanium_items"))
                      .withTabsBefore(CreativeModeTabs.INGREDIENTS)
                      .displayItems((itemDisplayParameters, output) -> {
-                         output.accept(ModItems.CATANIUM_SLAB);
-                         output.accept(ModBlocks.CATANIUM_BLOCK);
                          output.accept(ModBlocks.CATANIUM_ORE);
+                         output.accept(ModBlocks.CATANIUM_BLOCK);
+                         output.accept(ModItems.CATANIUM_SLAB);
 
+                         output.accept(ModItems.CATANIUM_SWORD);
+                         output.accept(ModItems.CATANIUM_PICKAXE);
+                         output.accept(ModItems.CATANIUM_AXE);
+                         output.accept(ModItems.CATANIUM_SHOVEL);
+                         output.accept(ModItems.CATANIUM_HOE);
                      })
                      .build());
 

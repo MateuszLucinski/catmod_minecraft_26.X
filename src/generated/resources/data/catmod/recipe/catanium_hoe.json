@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "catanium",
+  "key": {
+    "A": "catmod:catanium_slab",
+    "B": "minecraft:stick"
+  },
+  "pattern": [
+    "AA",
+    "B ",
+    "B "
+  ],
+  "result": {
+    "id": "catmod:catanium_hoe"
+  }
+}
