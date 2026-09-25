@@ -31,6 +31,11 @@ public class ModCreativeModeTabs {
                          output.accept(ModItems.CATANIUM_AXE);
                          output.accept(ModItems.CATANIUM_SHOVEL);
                          output.accept(ModItems.CATANIUM_HOE);
+
+                         output.accept(ModItems.CATANIUM_HEMLET);
+                         output.accept(ModItems.CATANIUM_CHESTPLATE);
+                         output.accept(ModItems.CATANIUM_LEGGINGS);
+                         output.accept(ModItems.CATANIUM_BOOTS);
                      })
                      .build());
 

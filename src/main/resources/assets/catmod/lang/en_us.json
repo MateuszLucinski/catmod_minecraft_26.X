@@ -8,6 +8,10 @@
   "item.catmod.catanium_shovel" : "Catanium Shovel",
   "item.catmod.catanium_hoe" : "Catanium Hoe",
 
+  "item.catmod.catanium_helmet" : "Catanium Helmet",
+  "item.catmod.catanium_chestplate" : "Catanium Chestplate",
+  "item.catmod.catanium_leggings" : "Catanium Leggings",
+  "item.catmod.catanium_boots" : "Catanium Boots",
 
   "block.catmod.catanium_block" : "Catanium Block",
   "block.catmod.catanium_ore" : "Catanium Ore",

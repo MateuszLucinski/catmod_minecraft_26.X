@@ -1,0 +1,19 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "catmod:catanium"
+      }
+    ],
+    "humanoid_baby": [
+      {
+        "texture": "catmod:catanium"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "catmod:catanium"
+      }
+    ]
+  }
+}

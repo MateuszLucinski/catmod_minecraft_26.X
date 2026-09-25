@@ -37,6 +37,7 @@ public class ModRecipeProvider extends RecipeProvider {
 
     @Override
     protected void buildRecipes() {
+        /*BLOCKS*/
         shaped(RecipeCategory.MISC, ModBlocks.CATANIUM_BLOCK.get())
                 .pattern("AAA")
                 .pattern("AAA")
@@ -53,7 +54,7 @@ public class ModRecipeProvider extends RecipeProvider {
                 .save(output, "catmod:catanium_slabs_from_block");
 
 
-
+        /*TOOLS*/
         shaped(RecipeCategory.COMBAT, ModItems.CATANIUM_SWORD.get())
                 .pattern("A")
                 .pattern("A")
@@ -107,5 +108,43 @@ public class ModRecipeProvider extends RecipeProvider {
                 .unlockedBy(getHasName(ModItems.CATANIUM_SLAB.get()), has(ModItems.CATANIUM_SLAB))
                 .group("catanium")
                 .save(output);
+
+
+        /*ARMOR*/
+        shaped(RecipeCategory.MISC, ModItems.CATANIUM_HEMLET.get())
+                .pattern("AAA")
+                .pattern("A A")
+                .define('A', ModItems.CATANIUM_SLAB.get())
+                .unlockedBy(getHasName(ModItems.CATANIUM_SLAB.get()), has(ModItems.CATANIUM_SLAB))
+                .group("catanium")
+                .save(output);
+
+        shaped(RecipeCategory.MISC, ModItems.CATANIUM_CHESTPLATE.get())
+                .pattern("A A")
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', ModItems.CATANIUM_SLAB.get())
+                .unlockedBy(getHasName(ModItems.CATANIUM_SLAB.get()), has(ModItems.CATANIUM_SLAB))
+                .group("catanium")
+                .save(output);
+
+        shaped(RecipeCategory.MISC, ModItems.CATANIUM_LEGGINGS.get())
+                .pattern("AAA")
+                .pattern("A A")
+                .pattern("A A")
+                .define('A', ModItems.CATANIUM_SLAB.get())
+                .unlockedBy(getHasName(ModItems.CATANIUM_SLAB.get()), has(ModItems.CATANIUM_SLAB))
+                .group("catanium")
+                .save(output);
+
+        shaped(RecipeCategory.MISC, ModItems.CATANIUM_BOOTS.get())
+                .pattern("A A")
+                .pattern("A A")
+                .define('A', ModItems.CATANIUM_SLAB.get())
+                .unlockedBy(getHasName(ModItems.CATANIUM_SLAB.get()), has(ModItems.CATANIUM_SLAB))
+                .group("catanium")
+                .save(output);
+
+
     }
 }
