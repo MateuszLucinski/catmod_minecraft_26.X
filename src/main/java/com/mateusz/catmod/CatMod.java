@@ -53,7 +53,7 @@ public class CatMod {
 
     }
 
-    // Add the example block item to the building blocks tab
+
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS){
             event.accept(ModItems.CAT_MINT);

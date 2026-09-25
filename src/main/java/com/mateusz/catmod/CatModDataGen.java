@@ -30,5 +30,6 @@ public class CatModDataGen {
                 List.of(new LootTableProvider.SubProviderEntry(ModBlockLootTableProvider::new, LootContextParamSets.BLOCK)),lookupProvider)
         );
         generator.addProvider(true, new ModRecipeProvider.Runner(packOutput,lookupProvider));
+        generator.addProvider(true, new ModEquipmentAssetProvider(packOutput));
     }
 }

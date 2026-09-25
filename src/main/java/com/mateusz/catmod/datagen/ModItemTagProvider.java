@@ -26,5 +26,9 @@ public class ModItemTagProvider extends ItemTagsProvider {
         tag(ItemTags.SHOVELS).add(ModItems.CATANIUM_SHOVEL.get());
         tag(ItemTags.HOES).add(ModItems.CATANIUM_HOE.get());
 
+        tag(ItemTags.HEAD_ARMOR).add(ModItems.CATANIUM_HEMLET.get());
+        tag(ItemTags.CHEST_ARMOR).add(ModItems.CATANIUM_CHESTPLATE.get());
+        tag(ItemTags.LEG_ARMOR).add(ModItems.CATANIUM_LEGGINGS.get());
+        tag(ItemTags.FOOT_ARMOR).add(ModItems.CATANIUM_BOOTS.get());
     }
 }
