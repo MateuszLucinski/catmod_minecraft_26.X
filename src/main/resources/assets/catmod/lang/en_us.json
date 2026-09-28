@@ -16,7 +16,10 @@
   "block.catmod.catanium_block" : "Catanium Block",
   "block.catmod.catanium_ore" : "Catanium Ore",
 
-  "creativetab.catmod.catanium_items": "Catanium Items"
+  "creativetab.catmod.catanium_items": "Catanium Items",
+
+
+  "sound.twojmod.cat_mint_use_sound": "Mint meow effect"
 
 
 }
