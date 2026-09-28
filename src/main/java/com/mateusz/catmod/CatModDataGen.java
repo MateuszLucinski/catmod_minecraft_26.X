@@ -31,5 +31,6 @@ public class CatModDataGen {
         );
         generator.addProvider(true, new ModRecipeProvider.Runner(packOutput,lookupProvider));
         generator.addProvider(true, new ModEquipmentAssetProvider(packOutput));
+        generator.addProvider(true, new ModSoundsProvider(packOutput));
     }
 }

@@ -3,6 +3,7 @@ package com.mateusz.catmod;
 import com.mateusz.catmod.block.ModBlocks;
 import com.mateusz.catmod.creativemodtab.ModCreativeModeTabs;
 import com.mateusz.catmod.item.ModItems;
+import com.mateusz.catmod.sound.ModSounds;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -36,6 +37,8 @@ public class CatMod {
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+
+        ModSounds.SOUND_EVENTS.register(modEventBus);
 
         // Register ourselves for server and other game events we are interested in.
         // Note that this is necessary if and only if we want *this* class (CatMod) to respond directly to events.

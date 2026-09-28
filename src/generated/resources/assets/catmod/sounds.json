@@ -1,0 +1,8 @@
+{
+  "cat_mint_use_sound": {
+    "sounds": [
+      "catmod:cat_use"
+    ],
+    "subtitle": "sound.catmod.cat_mint_use_sound"
+  }
+}
